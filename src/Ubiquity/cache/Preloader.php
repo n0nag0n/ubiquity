@@ -308,13 +308,15 @@ class Preloader {
 	 * @return \Ubiquity\cache\Preloader
 	 */
 	public function addUbiquityBasics($hasDatabase = true) {
-		$this->addUbiquityCache ();
-		$this->addUbiquityControllers ();
-		// $this->addUbiquityHttpUtils ();
-		if ($hasDatabase) {
-			$this->addUbiquityPdo ();
-			$this->addUbiquityORM ();
-		}
+		/*
+		 * $this->addUbiquityCache ();
+		 * $this->addUbiquityControllers ();
+		 * $this->addUbiquityHttpUtils ();
+		 * if ($hasDatabase) {
+		 * $this->addUbiquityPdo ();
+		 * $this->addUbiquityORM ();
+		 * }
+		 */
 		return $this;
 	}
 
